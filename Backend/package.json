@@ -1,0 +1,30 @@
+{
+  "name": "bookducks-jonathan",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.1.7",
+    "@strapi/plugin-users-permissions": "4.1.7",
+    "@strapi/plugin-i18n": "4.1.7",
+    "better-sqlite3": "7.4.6"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "f45d1335-babd-4cc4-a77b-30c706eaa155"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "Book",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titel": {
+      "type": "string",
+      "required": true
+    },
+    "scribe": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "biginteger"
+    },
+    "rating": {
+      "type": "enumeration",
+      "enum": [
+        "Really bad",
+        "Bad",
+        "Ok",
+        "Good",
+        "Really Good"
+      ]
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "genres": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::genre.genre",
+      "inversedBy": "books"
+    },
+    "owner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "share.owner",
+      "required": true
+    }
+  }
+}

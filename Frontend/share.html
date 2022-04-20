@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lend a book</title>
+    <script src="https://kit.fontawesome.com/5be1d252f4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1><a href="index.html">Bookducks   <i class="fa-brands fa-earlybirds"></i></a></h1>
+    </div>
+
+    <div class="sharewrapper">
+        <h2 class="title">Sharing is Caring</h2>
+
+        <div id="shareBookBox">
+            <label for="bookTitle">Title:</label>
+            <input type="text" id="bookTitle">
+
+            <label for="bookScribe">Scribe:</label>
+            <input type="text" id="bookScribe">
+
+            <label for="bookPages">Pages:</label>
+            <input type="number" id="bookPages">
+
+            
+            <label for="bookEmail">Email:</label>
+            <input type="email" id="bookEmail">
+
+            <label for="bookUsername">Username:</label>
+            <input type="text" id="bookUsername">
+            
+            <label for="bookImage">Image:</label>
+            <input type="file" id="bookImage">
+
+            <label for="bookGenreType">Genre:</label>
+            <select name="Genre" id="bookGenreType">
+                <Option selected disabled>    </Option>
+                <Option value="0">Romance</Option>
+                <Option value="1">Comedy</Option>
+                <Option value="2">Horror</Option>
+                <Option value="3">Kids</Option>
+                <Option value="4">Fantasy</Option>
+                <Option value="5">Sci-fi</Option>
+            </select>
+        </br>
+            <button id="addBook">Add Book</button>
+        </div>
+
+        <div id="shareAudiobookBox">
+            <label for="audiobookTitle">Title:</label>
+            <input type="text" id="audiobookTitle">
+
+            <label for="audiobookScribe">Scribe:</label>
+            <input type="text" id="audiobookScribe">
+
+            <label for="audiobookPages">Pages:</label>
+            <input type="number" id="audiobookPages">
+
+
+            <label for="audiobookEmail">Email:</label>
+            <input type="email" id="audiobookEmail">
+
+            <label for="audiobookUsername">Username:</label>
+            <input type="text" id="audiobookUsername">
+
+            <label for="audiobookImage">Image:</label>
+            <input type="file" id="audiobookImage">
+
+            <label for="audiobookGenreType">Genre:</label>
+            <select name="Genre" id="audiobookGenreType">
+                <Option selected disabled>    </Option>
+                <Option value="0">Romance</Option>
+                <Option value="1">Comedy</Option>
+                <Option value="2">Horror</Option>
+                <Option value="3">Kids</Option>
+                <Option value="4">Fantasy</Option>
+                <Option value="5">Sci-fi</Option>
+            </select>
+        </br>
+            <button id="addAudiobook">Add Audiobook</button>
+        </div>
+    </div>
+
+<script src="share.js"></script>
+</body>
+</html>

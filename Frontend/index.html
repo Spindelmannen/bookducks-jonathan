@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/5be1d252f4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1><a href="index.html">Bookducks   <i class="fa-brands fa-earlybirds"></i></a></h1>
+        
+    </div>
+
+    <div class="wrapper">
+    
+        <div id="loginRegisterBox" class="loginRegisterBox">
+            <form action="" class="formLogin">
+                <h2 class="formtitle">You're not logged in yet</h2>
+                <label for="identifier">Username or Email</label>
+                <input id="identifier" type="text" placeholder="Username@email.com">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="******">
+                <button id="login">Login</button>
+            
+            </form>
+            <div class="borderline"></div>
+            <form action="" class="register">
+                <h2 class="formtitle">Become a member & share!</h2>
+                <label for="registerName"> Username </label>
+                <input id="registerName" type="text" placeholder="Username">
+                <label for="registerEmail">Email</label>
+                <input id="registerEmail" type="email" placeholder="User@Email.com">
+                <label for="registerPassword">Password</label>
+            <input id="registerPassword" type="password" placeholder="Password">
+                <button id="registerBtn">Register</button>
+    
+            </form>
+        
+        </div>
+    
+        <div id="main"></div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

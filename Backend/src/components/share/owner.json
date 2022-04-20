@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_share_owners",
+  "info": {
+    "displayName": "Owner",
+    "icon": "user-astronaut"
+  },
+  "options": {},
+  "attributes": {
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Username": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
